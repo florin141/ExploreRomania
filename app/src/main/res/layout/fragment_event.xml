@@ -5,10 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".EventFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <GridView
+        android:id="@+id/event_grid"
+        android:numColumns="2"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/tab_events" />
+        android:drawSelectorOnTop="true" />
 
 </FrameLayout>
