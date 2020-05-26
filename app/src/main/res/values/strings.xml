@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Explore Romania</string>
+
+    <string name="tab_cities">cities</string>
+    <string name="tab_events">events</string>
+</resources>
