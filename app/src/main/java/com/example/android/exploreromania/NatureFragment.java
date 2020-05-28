@@ -23,6 +23,8 @@ public class NatureFragment extends SightFragment {
         sights.add(new Sight(getString(R.string.ana_lake_name), getString(R.string.ana_lake_desc), SightType.Lake , 4.7f, romania, R.drawable.ana));
         sights.add(new Sight(getString(R.string.delta_river_name), getString(R.string.delta_river_desc), SightType.River, 4.5f, romania, R.drawable.danube_delta));
         sights.add(new Sight(getString(R.string.red_lake_name), getString(R.string.red_lake_desc), SightType.Lake, 4.6f, romania, R.drawable.lacul_rosu));
+        sights.add(new Sight(getString(R.string.iron_gates_river_name), getString(R.string.iron_gates_river_desc), SightType.River, 4.6f, romania, R.drawable.decebal));
+        sights.add(new Sight(getString(R.string.craiului_mountain_name), getString(R.string.craiului_mountain_desc), SightType.Mountain, 4.9f, romania, R.drawable.piatra_craiului));
 
         return sights;
     }

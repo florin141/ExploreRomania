@@ -56,4 +56,8 @@
     <string name="red_lake_name">Red Lake</string>
     <string name="red_lake_desc">Red Lake is a natural dam lake formed following the collapse of a slope due to the earthquake of January 23, 1838 at 18:45, 6.9 magnitude, VIII intensity, at the foot of Hasmasul Mare Mountain, near the Bicaz Gorge, at a distance of 26 km from Gheorgheni, in Harghita County</string>
     <string name="sight_image">Sight image</string>
+    <string name="iron_gates_river_name">Iron Gates</string>
+    <string name="iron_gates_river_desc">The Iron Gates is a gorge on the river Danube. It forms part of the boundary between Serbia and Romania.</string>
+    <string name="craiului_mountain_name">Piatra Craiului</string>
+    <string name="craiului_mountain_desc">The Piatra Craiului mountains form a narrow and saw-like ridge, which is about 25 km long. The highest elevation in the massif is the \"Vârful La Om\" at 2,238 metres.</string>
 </resources>

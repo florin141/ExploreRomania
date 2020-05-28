@@ -5,11 +5,9 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -56,7 +54,7 @@ public class SightAdaptor extends ArrayAdapter<Sight> {
 
         final TextView sightLocation = listItemView.findViewById(R.id.sight_location);
         final RatingBar sightRating = listItemView.findViewById(R.id.sight_rating_bar);
-        sightLocation.setText(currentSight.getType() + " in " + currentSight.getLocation().toString());
+        sightLocation.setText(String.format("%s in %s", currentSight.getType(), currentSight.getLocation().toString()));
         if (currentSight.getType() == SightType.River || currentSight.getType() == SightType.Road) {
             sightRating.setVisibility(View.GONE);
         } else {

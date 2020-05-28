@@ -15,33 +15,18 @@ public class City {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getShortDescription() {
         int descriptionLength = description.length();
 
-        if (descriptionLength > 280) {
-            return description.substring(0, 280).concat("...");
+        if (descriptionLength > 350) {
+            return description.substring(0, 350).concat("...");
         }
 
         return description;
-    }
-
-    public String getFullDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public int getImageResourceId() {
         return imageResourceId;
     }
 
-    public void setImageResourceId(int imageResourceId) {
-        this.imageResourceId = imageResourceId;
-    }
 }
