@@ -30,7 +30,6 @@ public class CityAdaptor extends ArrayAdapter<City> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        // Check if an existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(context).inflate(R.layout.city_item, parent, false);

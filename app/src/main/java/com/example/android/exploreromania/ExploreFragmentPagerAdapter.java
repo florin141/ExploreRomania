@@ -20,23 +20,31 @@ public class ExploreFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new CityFragment();
+            return new MustSeeFragment();
+        } else if (position == 1) {
+            return new NatureFragment();
+        } else if (position == 2) {
+            return new CastlesFragment();
         } else {
-            return new EventFragment();
+            return new CityFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 4;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return mContext.getString(R.string.tab_cities);
+            return mContext.getString(R.string.tab_must_see);
+        } else if (position == 1) {
+            return mContext.getString(R.string.tab_nature);
+        } else if (position == 2) {
+            return mContext.getString(R.string.tab_castles);
         } else {
-            return mContext.getString(R.string.tab_events);
+            return mContext.getString(R.string.tab_cities);
         }
     }
 }

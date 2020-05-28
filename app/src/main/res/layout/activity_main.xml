@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_gravity="center"
-            android:textColor="@android:color/black"
+            android:textColor="@color/colorAccent"
             android:fontFamily="@font/bebas_neue"
             android:textSize="22sp"
             android:minHeight="?actionBarSize"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:tabTextColor="@android:color/darker_gray"
-            app:tabSelectedTextColor="@android:color/background_dark"
+            app:tabSelectedTextColor="@color/colorAccent"
             android:background="?attr/colorPrimary" />
     </com.google.android.material.appbar.AppBarLayout>
 

@@ -13,14 +13,16 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        app:cardCornerRadius="19dp">
+        app:cardCornerRadius="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp">
 
             <ImageView
                 android:id="@+id/city_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/cluj_napoca" />
+                tools:src="@drawable/cluj_napoca" />
     </androidx.cardview.widget.CardView>
 
     <RelativeLayout
@@ -32,7 +34,9 @@
         android:paddingBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp">
 
         <TextView
             android:id="@+id/city_name"
@@ -40,10 +44,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
             android:fontFamily="@font/bebas_neue"
             android:textStyle="bold"
-            tools:text="Bucharest" />
+            tools:text="Bucharest"
+            android:layout_alignParentEnd="true" />
 
         <TextView
             android:id="@+id/city_desc"
@@ -51,29 +57,8 @@
             android:fontFamily="sans-serif-light"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tortor ipsum. Duis porttitor dolor..." />
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in tortor ipsum. Duis ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit amet, consectetur adipiscingipsum dolor sit amet, consectetur adipiscingipsum dolor sit amet, consectetur adipiscingipsum dolor sit amet, consectetur porttitor dolor..." />
 
-        <LinearLayout
-            android:id="@+id/city_details"
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:textAllCaps="true"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:fontFamily="@font/bebas_neue"
-                android:text="More Details"/>
-
-            <ImageView
-                android:layout_marginLeft="4dp"
-                android:layout_width="24dp"
-                android:layout_height="24dp" />
-        </LinearLayout>
     </RelativeLayout>
-
 
 </LinearLayout>
