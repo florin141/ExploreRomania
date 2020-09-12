@@ -36,24 +36,23 @@ public class SightAdaptor extends ArrayAdapter<Sight> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(context).inflate(R.layout.sight_item, parent, false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.sight_item, parent, false);
         }
 
         final Sight currentSight = getItem(position);
 
-        final ImageView sightImage = listItemView.findViewById(R.id.sight_image);
+        final ImageView sightImage = convertView.findViewById(R.id.sight_image);
         sightImage.setImageResource(currentSight.getImageResourceId());
 
-        final TextView sightTitle = listItemView.findViewById(R.id.sight_title);
+        final TextView sightTitle = convertView.findViewById(R.id.sight_title);
         sightTitle.setText(currentSight.getName());
 
-        final TextView sightDescription = listItemView.findViewById(R.id.sight_description);
+        final TextView sightDescription = convertView.findViewById(R.id.sight_description);
         sightDescription.setText(currentSight.getDescription());
 
-        final TextView sightLocation = listItemView.findViewById(R.id.sight_location);
-        final RatingBar sightRating = listItemView.findViewById(R.id.sight_rating_bar);
+        final TextView sightLocation = convertView.findViewById(R.id.sight_location);
+        final RatingBar sightRating = convertView.findViewById(R.id.sight_rating_bar);
         sightLocation.setText(String.format("%s in %s", currentSight.getType(), currentSight.getLocation().toString()));
         if (currentSight.getType() == SightType.River || currentSight.getType() == SightType.Road) {
             sightRating.setVisibility(View.GONE);
@@ -61,9 +60,9 @@ public class SightAdaptor extends ArrayAdapter<Sight> {
             sightRating.setRating(currentSight.getRating());
         }
 
-        final RelativeLayout backgroundMask = listItemView.findViewById(R.id.mask);
+        final RelativeLayout backgroundMask = convertView.findViewById(R.id.mask);
 
-        ToggleButton hideText = listItemView.findViewById(R.id.hideText);
+        ToggleButton hideText = convertView.findViewById(R.id.hideText);
         hideText.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -92,6 +91,6 @@ public class SightAdaptor extends ArrayAdapter<Sight> {
             }
         });
 
-        return listItemView;
+        return convertView;
     }
 }

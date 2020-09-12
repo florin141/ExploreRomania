@@ -30,22 +30,21 @@ public class CityAdaptor extends ArrayAdapter<City> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(context).inflate(R.layout.city_item, parent, false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.city_item, parent, false);
         }
 
         City currentCity = getItem(position);
 
-        ImageView cityImage = listItemView.findViewById(R.id.city_image);
+        ImageView cityImage = convertView.findViewById(R.id.city_image);
         cityImage.setImageResource(currentCity.getImageResourceId());
 
-        TextView cityName = listItemView.findViewById(R.id.city_name);
+        TextView cityName = convertView.findViewById(R.id.city_name);
         cityName.setText(currentCity.getName());
 
-        TextView cityDesc = listItemView.findViewById(R.id.city_desc);
+        TextView cityDesc = convertView.findViewById(R.id.city_desc);
         cityDesc.setText(currentCity.getShortDescription());
 
-        return listItemView;
+        return convertView;
     }
 }
