@@ -11,7 +11,7 @@ The goal was to create a Tour Guide App which presents relevant information to a
 ## Screenshots
 
 
-The app it's quite simple in it's design. The user can select the tab that it is interested in and scroll through a list of top attractions. Tapping on the eye icon will hide/reveal some details about the given atraction.
+The app it's quite simple in it's design. The user can select the tab that it is interested in and scroll through a list of top attractions. Tapping on the eye icon will hide/reveal some details about the given attraction.
 
 <br>
 <p align="center">
